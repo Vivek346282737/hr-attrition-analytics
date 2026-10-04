@@ -1,8 +1,8 @@
-# HR Attrition Analysis
+# HR Attrition Analysis & Prediction
 
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square) ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-1F4E79?style=flat-square) ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square) ![Statistics](https://img.shields.io/badge/Statistics-1F4E79?style=flat-square)
 
-Analysis of employee attrition for 1,470 employees using **SQL, Python, Excel and Tableau**:
+Analysis of employee attrition for 1,470 employees using **SQL, Python, machine learning, Excel and Tableau**:
 who leaves, and which factors are linked to leaving.
 
 **Live dashboard:** [HR Attrition Analysis Dashboard (Tableau Public)](https://public.tableau.com/app/profile/vivek.prasad5963/viz/HRAttritionAnalysisDashboard_17910993091870/HRAttritionAnalysisDashboard)
