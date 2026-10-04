@@ -1,0 +1,45 @@
+HR ATTRITION - SUMMARY
+============================================================
+Employees: 1,470   Left: 237   Attrition rate: 16.1%
+
+SQL: attrition_by_department
+            Department  employees  left_company  attrition_rate_pct
+                 Sales        446            92                20.6
+       Human Resources         63            12                19.0
+Research & Development        961           133                13.8
+
+SQL: job_role_vs_company_average
+                  JobRole  employees  attrition_rate_pct  gap_vs_company_pts  risk_rank
+     Sales Representative         83                39.8                23.6          1
+    Laboratory Technician        259                23.9                 7.8          2
+          Human Resources         52                23.1                 7.0          3
+          Sales Executive        326                17.5                 1.4          4
+       Research Scientist        292                16.1                -0.0          5
+   Manufacturing Director        145                 6.9                -9.2          6
+Healthcare Representative        131                 6.9                -9.3          7
+                  Manager        102                 4.9               -11.2          8
+        Research Director         80                 2.5               -13.6          9
+
+SQL: overtime_and_income
+OverTime  income_band  employees  attrition_rate_pct
+      No  1. Under 3K        281                17.4
+      No     2. 3K-6K        378                 8.5
+      No    3. 6K-10K        199                 8.0
+      No 4. Above 10K        196                 6.6
+     Yes  1. Under 3K        114                56.1
+     Yes     2. 3K-6K        141                24.1
+     Yes    3. 6K-10K         76                22.4
+     Yes 4. Above 10K         85                14.1
+
+SQL: income_left_vs_stayed
+Attrition  employees  avg_monthly_income  avg_years_at_company  avg_age
+       No       1233              6833.0                   7.4     37.6
+      Yes        237              4787.0                   5.1     33.6
+
+Chi-square tests of independence (is attrition related to ...?)
+Overtime       chi2=   87.6  dof=1  p=8.16e-21
+Department     chi2=   10.8  dof=2  p=0.00453
+Age Group      chi2=   58.6  dof=3  p=1.19e-12
+Income Band    chi2=   64.3  dof=3  p=7.13e-14
+Tenure Band    chi2=   65.7  dof=3  p=3.56e-14
+Gender         chi2=    1.1  dof=1  p=0.291

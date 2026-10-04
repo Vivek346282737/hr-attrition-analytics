@@ -1,0 +1,9 @@
+OverTime,income_band,employees,attrition_rate_pct
+No,1. Under 3K,281,17.4
+No,2. 3K-6K,378,8.5
+No,3. 6K-10K,199,8.0
+No,4. Above 10K,196,6.6
+Yes,1. Under 3K,114,56.1
+Yes,2. 3K-6K,141,24.1
+Yes,3. 6K-10K,76,22.4
+Yes,4. Above 10K,85,14.1

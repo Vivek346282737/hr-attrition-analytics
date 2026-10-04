@@ -1,0 +1,10 @@
+JobRole,employees,attrition_rate_pct,gap_vs_company_pts,risk_rank
+Sales Representative,83,39.8,23.6,1
+Laboratory Technician,259,23.9,7.8,2
+Human Resources,52,23.1,7.0,3
+Sales Executive,326,17.5,1.4,4
+Research Scientist,292,16.1,-0.0,5
+Manufacturing Director,145,6.9,-9.2,6
+Healthcare Representative,131,6.9,-9.3,7
+Manager,102,4.9,-11.2,8
+Research Director,80,2.5,-13.6,9
