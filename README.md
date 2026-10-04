@@ -17,6 +17,18 @@ who leaves, and which factors are linked to leaving.
 - Chi-square tests show attrition is significantly related to overtime, income band, tenure band, age group
   (all p < 0.001) and department (p = 0.005), but **not to gender** (p = 0.29).
 
+## Attrition prediction model
+
+A logistic regression model (implemented in NumPy, 16 features, stratified 75/25 train/test split) predicts who is likely to leave.
+
+- **ROC AUC 0.82** on the hold-out test set.
+- Flagging employees above the base attrition rate catches **75% of leavers** (recall 0.75, precision 0.35), which suits a retention
+  programme where missing a leaver costs more than an extra check-in. At a 0.5 threshold accuracy is 0.85 versus a 0.84 baseline.
+- Strongest drivers: overtime (odds ratio 2.07 per standard deviation), low environment and job satisfaction, years since last
+  promotion and number of previous employers.
+
+![ROC curve](outputs/roc_curve.png)
+
 ## Recommendations
 
 1. Review overtime load and compensation for low-income roles, starting with Sales Representatives
@@ -30,6 +42,7 @@ who leaves, and which factors are linked to leaving.
 |---|---|
 | **SQL** (SQLite) | Aggregations, CASE bands, CTE, subquery, RANK window function |
 | **Python** | Pandas data preparation and banding, SciPy chi-square tests of independence |
+| **Machine learning** | Logistic regression in NumPy with feature scaling, train/test split, ROC AUC, precision and recall |
 | **Excel** | KPI sheet (COUNTIFS, AVERAGEIFS), three pivot tables, pivot chart, slicer |
 | **Tableau** | 7-view dashboard, calculated fields, LOD expression (gap vs company average), filter action |
 
@@ -37,6 +50,7 @@ who leaves, and which factors are linked to leaving.
 
 ```
 analysis.py          data preparation, SQL queries, chi-square tests -> outputs/
+predict_attrition.py logistic regression model and evaluation -> outputs/
 build_excel.py       Excel workbook with KPI formulas and pivot tables (needs Microsoft Excel)
 data/                raw dataset and the cleaned file used by Tableau
 outputs/             SQL results and summary.txt
@@ -46,8 +60,9 @@ excel/               hr_attrition_analysis.xlsx
 ## How to run
 
 ```powershell
-pip install pandas scipy openpyxl pywin32
+pip install pandas numpy scipy matplotlib openpyxl pywin32
 python analysis.py
+python predict_attrition.py
 python build_excel.py
 ```
 

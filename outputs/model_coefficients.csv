@@ -1,0 +1,17 @@
+feature,coefficient,odds_ratio
+OverTime,0.726,2.066
+EnvironmentSatisfaction,-0.411,0.663
+JobSatisfaction,-0.396,0.673
+YearsSinceLastPromotion,0.391,1.478
+NumCompaniesWorked,0.386,1.471
+TotalWorkingYears,-0.356,0.701
+Single,0.332,1.394
+Age,-0.299,0.742
+TravelsFrequently,0.28,1.323
+DistanceFromHome,0.267,1.306
+SalesDepartment,0.258,1.294
+JobLevel,-0.226,0.797
+WorkLifeBalance,-0.183,0.833
+YearsAtCompany,-0.161,0.852
+MonthlyIncome,-0.155,0.857
+StockOptionLevel,-0.134,0.875
